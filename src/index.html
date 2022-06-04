@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIDE Test</title>
+    <link rel="stylesheet" href="app.css" />
+    <script type="text/javascript" src="model.json"></script>
+    <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+</head>
+
+<body style="margin:0px; padding:0px;">
+    <header>Test Blog</header>
+
+    <div class="AppView">
+        <div id="participants">
+            <div class="participantsHeader">ARTICLES<button style="float:right;margin-right:20px; cursor:pointer;" onclick="createArticle()">Create Article</button></div>
+        </div>
+        <div class="MasterChatBox">
+            <div class="articleBoard">
+                <div class="article" id="previewArticle">
+                    <div class="ArticleTitle"></div>
+                    
+                    <textarea class="ArticleBody" id="ArticleBodyEditable" hidden></textarea>
+                    <div class="ArticleBody" id="ArticleBodyStatic"></div>
+                    <div class="hiddenActions" style="position:absolute; display: none; text-align: right;">
+                        <button onclick="saveChanges()">Ok</button><button onclick="cancelChanges()">Cancel</button>
+                    </div>
+                </div>
+                <div class="article" id="newArticle">
+                    <div class="ArticleTitle" style="padding: 0px;">
+                        <input type="text" style=" margin: 0px; min-height: 40px; width:100.5%; font-size:20px;" id="name" placeholder="Name of article (Short title)"/>
+                        <input type="text" style=" margin: 0px; min-height: 40px; width:100.5%; font-size:20px;" id="newTitle" placeholder="Complete Title of article"/>
+                    </div>
+                    
+                    <textarea class="ArticleBody" id="newArticleBody" placeholder="Article Body"></textarea>
+                    <div class="hiddenActionsNew" style="position:absolute; display: none; text-align: right;">
+                        <button onclick="createNewArticle()">Ok</button><button onclick="cancelNewArticle()">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
