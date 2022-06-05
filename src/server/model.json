@@ -1,4 +1,4 @@
-dummyParticipants =[{
+[{
         "id":1,
         "name": "Article 1",
         "title":"This is test article made to demonstrate blog website using html and js only",
@@ -35,3 +35,5 @@ dummyParticipants =[{
         "html":"Some test articles are theoretically able to be modified and upgraded to flight-ready status."
     }
 ]
+
+
